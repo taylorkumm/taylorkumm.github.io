@@ -190,7 +190,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>INSERT TEXT HERE</p>
+<p>It’s 2024 and whether fans like it or not, conference realignment is here.</p>
+<p>Gone are the days in which conferences were created based on geography and while many argue that it’s sad and disrespectful to the history of college athletics, it’s hard to deny that conference matchups just got a lot more enticing. In no sport is that more true than football.</p>
+<p>The shift in realignment is largely due to massive television deals that hinged on college football viewership and sparked the new “mega conferences” of this coming season.</p>
+<p>One of the most exciting transitions includes the addition of the high-scoring, West Coast teams to the gritty, physical conference that is the Big Ten. Coming this fall, the Big Ten Conference will now consist of 18 teams after the addition of Oregon, Southern California, UCLA, and Washington.</p>
+<p>It’s an…interesting marriage of two historically different landscapes. The four new teams are from the now-deceased PAC-12 Conference which has been known for executing some of the highest scoring, air-raid offenses while also having some sometimes shotty defense. now the Big Ten Conference is basically known for the inverse of that, having stout defenses and pound-rock offense that slowly wears opponents down.</p>
+<p>What commences in 2024 will probably justify those big TV deals with some blockbuster matchups.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -232,20 +237,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    <span class="at">x=</span><span class="st">"Offensive Yards Per Game"</span>, </span>
 <span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    <span class="at">y=</span><span class="st">"Defensive Yards Allowed Per Game"</span>, </span>
 <span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"How did the stats stack up in 2023?"</span>, </span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"The most appealing teams from last year can be found in the bottom left quadrant."</span>, </span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: JEFF GALLINI | By Taylor Kumm"</span>) <span class="sc">+</span> </span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span> </span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>), </span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">10</span>), </span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title.position =</span> <span class="st">"plot"</span></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text_repel</span>(<span class="at">data=</span>oregon, <span class="fu">aes</span>(<span class="at">x=</span><span class="st">`</span><span class="at">Off Yards per Game</span><span class="st">`</span>, <span class="at">y=</span><span class="st">`</span><span class="at">Yards Per Game Allowed</span><span class="st">`</span>, <span class="at">label =</span> School))<span class="sc">+</span></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text_repel</span>(<span class="at">data=</span>ucla, <span class="fu">aes</span>(<span class="at">x=</span><span class="st">`</span><span class="at">Off Yards per Game</span><span class="st">`</span>, <span class="at">y=</span><span class="st">`</span><span class="at">Yards Per Game Allowed</span><span class="st">`</span>, <span class="at">label =</span> School))<span class="sc">+</span></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text_repel</span>(<span class="at">data=</span>usc, <span class="fu">aes</span>(<span class="at">x=</span><span class="st">`</span><span class="at">Off Yards per Game</span><span class="st">`</span>, <span class="at">y=</span><span class="st">`</span><span class="at">Yards Per Game Allowed</span><span class="st">`</span>, <span class="at">label =</span> School))<span class="sc">+</span></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text_repel</span>(<span class="at">data=</span>wash, <span class="fu">aes</span>(<span class="at">x=</span><span class="st">`</span><span class="at">Off Yards per Game</span><span class="st">`</span>, <span class="at">y=</span><span class="st">`</span><span class="at">Yards Per Game Allowed</span><span class="st">`</span>, <span class="at">label =</span> School))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"The most appealing teams from last year can be found in the bottom right quadrant.</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="st">The newest members are highlighted in their respective colors, while the previous members are in black. "</span>, </span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: JEFF GALLINI | By Taylor Kumm"</span>) <span class="sc">+</span> </span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span> </span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>), </span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">10</span>), </span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title.position =</span> <span class="st">"plot"</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text_repel</span>(<span class="at">data=</span>oregon, <span class="fu">aes</span>(<span class="at">x=</span><span class="st">`</span><span class="at">Off Yards per Game</span><span class="st">`</span>, <span class="at">y=</span><span class="st">`</span><span class="at">Yards Per Game Allowed</span><span class="st">`</span>, <span class="at">label =</span> School))<span class="sc">+</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text_repel</span>(<span class="at">data=</span>ucla, <span class="fu">aes</span>(<span class="at">x=</span><span class="st">`</span><span class="at">Off Yards per Game</span><span class="st">`</span>, <span class="at">y=</span><span class="st">`</span><span class="at">Yards Per Game Allowed</span><span class="st">`</span>, <span class="at">label =</span> School))<span class="sc">+</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text_repel</span>(<span class="at">data=</span>usc, <span class="fu">aes</span>(<span class="at">x=</span><span class="st">`</span><span class="at">Off Yards per Game</span><span class="st">`</span>, <span class="at">y=</span><span class="st">`</span><span class="at">Yards Per Game Allowed</span><span class="st">`</span>, <span class="at">label =</span> School))<span class="sc">+</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text_repel</span>(<span class="at">data=</span>wash, <span class="fu">aes</span>(<span class="at">x=</span><span class="st">`</span><span class="at">Off Yards per Game</span><span class="st">`</span>, <span class="at">y=</span><span class="st">`</span><span class="at">Yards Per Game Allowed</span><span class="st">`</span>, <span class="at">label =</span> School))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <div>
@@ -255,6 +261,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>Immediately it becomes apparent that the newest teams will bring some extra spark on the offensive side of the ball. However, they will probably be giving up more yards as two of the newcomers top the worst defenses. Not to mention that if the new members would be constantly facing less impressive defenses in the Pac-12, their offensive numbers could also take a hit with the move to a new conference.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -267,8 +274,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">`</span><span class="at">Opponent 3rd Percent</span><span class="st">`</span> <span class="ot">=</span> <span class="st">"Defensive 3rd Down Con."</span></span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_header</span>(</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Does Nebraska have a chance to be special this season?"</span>,</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Amy Williams' team is near the middle of a tough conference where it matters most."</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"How do they compete on Third Downs?"</span>,</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Another reflection of how most of the new teams are opposite in playing styles"</span></span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> <span class="fu">tab_style</span>(</span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">style =</span> <span class="fu">cell_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">weight =</span> <span class="st">"bold"</span>, <span class="at">align =</span> <span class="st">"left"</span>),</span>
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">locations =</span> <span class="fu">cells_title</span>(<span class="st">"title"</span>)</span>
@@ -753,10 +760,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
 <tr class="header gt_heading">
-<th colspan="3" class="gt_heading gt_title gt_font_normal" style="text-align: left; color: #000000; font-weight: bold;">Does Nebraska have a chance to be special this season?</th>
+<th colspan="3" class="gt_heading gt_title gt_font_normal" style="text-align: left; color: #000000; font-weight: bold;">How do they compete on Third Downs?</th>
 </tr>
 <tr class="odd gt_heading">
-<th colspan="3" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="text-align: left; color: #000000;">Amy Williams' team is near the middle of a tough conference where it matters most.</th>
+<th colspan="3" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="text-align: left; color: #000000;">Another reflection of how most of the new teams are opposite in playing styles</th>
 </tr>
 <tr class="header gt_col_headings">
 <th id="School" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold" scope="col">School</th>
@@ -867,6 +874,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>Of course, it’s easy to say that when the new teams play a good defense things will change. Everyone has heard the phrase, “Defense wins championships”.While there is truth in that, what if the big, physical defenses of the former Big Ten get worn out? One can only bend so much before it breaks, and the newcomers are relentless on third-down conversions. Oregon had an astounding 51% conversion rate.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -885,17 +893,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a> <span class="fu">labs</span>(</span>
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">x=</span><span class="st">"Team"</span>, </span>
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">y=</span><span class="st">"Number of First Downs"</span>, </span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"Make it easy."</span>, </span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"History bodes well for quarterbacks that have limited opportunity for error."</span>, </span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: NCAA | By Taylor Kumm"</span>) <span class="sc">+</span> </span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span> </span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>), </span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">10</span>), </span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title.position =</span> <span class="st">"plot"</span></span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"How do they start their drives?"</span>, </span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"A run on first down is displayed in &lt;span style = 'color:forestgreen;'&gt;green.&lt;/span&gt;</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="st">A pass on first down is displayed in &lt;span style = 'color:skyblue;'&gt;blue.&lt;/span&gt;"</span>, </span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: NCAA | By Taylor Kumm"</span>) <span class="sc">+</span> </span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span> </span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">16</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>), </span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.subtitle =</span> <span class="fu">element_textbox_simple</span>(<span class="at">size=</span><span class="dv">10</span>), </span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title.position =</span> <span class="st">"plot"</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <div>
@@ -905,6 +914,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>As previous data alludes to, the newcomers have a significantly larger amount of first downs. Oregon had more than double the amount of first down than Iowa did. However, it doesn’t matter what down it is in a West Coast offense, defenses better be on their toes and there is no sense in packing the box. Rutgers ran on first down about the same as Oregon although they had close to half the amount of first downs.</p>
+<p>Surprisingly while you would expect most all of the long-time members to have heavily skewed bars in favor of running, most of them sit at around 50%</p>
+<p>Regardless, the 2024 Big Ten Conference realignment is like mixing a spicy jalapeno into grandma’s chili recipe—two distinct flavors coming together for an unforgettable taste that has all the elderly nervous. With high-flying West Coast offenses joining the rugged Big Ten, it’s sure to be a season packed with excitement and surprises.</p>
 
 
 
